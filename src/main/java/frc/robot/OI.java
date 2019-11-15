@@ -18,11 +18,11 @@ public class OI {
 
   Joystick driverJoystick = new Joystick(RobotMap.JOYSTICK_USB_DRIVER);
 
-  public double GetSpeed(){
+  public double getSpeed(){
     return driverJoystick.getRawAxis(RobotMap.JOYSTICK_LEFT_Y_AXIS);
   }
 
-  public double GetTurn(){
+  public double getTurn(){
     return driverJoystick.getRawAxis(RobotMap.JOYSTICK_RIGHT_X_AXIS);
   }
  
