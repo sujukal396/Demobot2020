@@ -8,6 +8,7 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.GenericHID.Hand;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -15,16 +16,16 @@ import edu.wpi.first.wpilibj.Joystick;
  */
 public class OI {
 
-  Joystick Driver = new Joystick(RobotMap.JOYSTICK_USB_DRIVER);
+  Joystick driverJoystick = new Joystick(RobotMap.JOYSTICK_USB_DRIVER);
 
   public double GetSpeed(){
-    return RobotMap.JOYSTICK_LEFT_Y_AXIS;
+    return driverJoystick.getRawAxis(RobotMap.JOYSTICK_LEFT_Y_AXIS);
   }
 
   public double GetTurn(){
-    return RobotMap.JOYSTICK_RIGHT_X_AXIS;
+    return driverJoystick.getRawAxis(RobotMap.JOYSTICK_RIGHT_X_AXIS);
   }
-
+ 
 
   //// CREATING BUTTONS
   // One type of button is a joystick button which is any button on a
