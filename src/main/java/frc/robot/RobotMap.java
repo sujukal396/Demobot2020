@@ -24,8 +24,8 @@ public class RobotMap {
   public static int Left_Middle_Id = 2;
   public static int Left_Back_Id = 1;
 
-  public static int JOYSTICK_USB_DRIVER = 1;
-  public static int JOYSTICK_USB_OPERATOR = 2;
+  public static int JOYSTICK_USB_DRIVER = 0;
+  public static int JOYSTICK_USB_OPERATOR = 1;
 
 
 
