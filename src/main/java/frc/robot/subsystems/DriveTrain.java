@@ -77,4 +77,12 @@ public class DriveTrain extends Subsystem {
   public boolean isRightInverted(){
     return drive.isRightSideInverted();
   }
+
+  public double getLeftEncoder() {
+    return leftBack.getSelectedSensorPosition(0);
+  }
+
+  public double getRightEncoder() {
+    return rightBack.getSelectedSensorPosition(0);
+  }
 }
