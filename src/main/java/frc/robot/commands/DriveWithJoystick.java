@@ -8,7 +8,9 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.Robot;
+import frc.robot.subsystems.DriveTrain;
 
 public class DriveWithJoystick extends Command {
   public DriveWithJoystick() {
@@ -32,6 +34,8 @@ public class DriveWithJoystick extends Command {
     else{
       Robot.driveTrain.arcadeDrive(0, 0);
     }
+
+    SmartDashboard.putBoolean("Right side inverted", Robot.driveTrain.isRightInverted());
   }
 
   // Make this return true when this Command no longer needs to run execute()

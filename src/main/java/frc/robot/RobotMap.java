@@ -30,7 +30,7 @@ public class RobotMap {
   public static int JOYSTICK_RIGHT_X_AXIS = 4;
   public static int JOYSTICK_RIGHT_Y_AXIS = 5;
   public static int JOYSTICK_LEFT_X_AXIS = 0;
-  public static int JOYSTICK_LEFT_Y_AXIS = 2;
+  public static int JOYSTICK_LEFT_Y_AXIS = 1;
 
 
 
