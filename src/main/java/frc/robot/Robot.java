@@ -23,6 +23,7 @@ import frc.robot.subsystems.DriveTrain;
  */
 public class Robot extends TimedRobot {
   public static DriveTrain driveTrain = new DriveTrain();
+  public static LimeLight limeLight = new LimeLight();
   public static OI m_oi;
 
 
