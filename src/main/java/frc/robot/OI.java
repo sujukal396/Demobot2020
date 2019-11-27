@@ -8,7 +8,8 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
-
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
+import frc.robot.commands.AutoTarget;
 /**
  * This class is the glue that binds the controls on the physical operator
  * interface to the commands and command groups that allow control of the robot.
@@ -17,6 +18,12 @@ public class OI {
 
   Joystick driverJoystick = new Joystick(RobotMap.JOYSTICK_USB_DRIVER);
 
+  JoystickButton redButton = new JoystickButton(driverJoystick, RobotMap.Red_Button_ID);
+
+  public OI() {
+    redButton.whileActive(new AutoTarget());
+  }
+
   public double getSpeed(){
     return driverJoystick.getRawAxis(RobotMap.JOYSTICK_LEFT_Y_AXIS);
   }
@@ -24,6 +31,8 @@ public class OI {
   public double getTurn(){
     return driverJoystick.getRawAxis(RobotMap.JOYSTICK_RIGHT_X_AXIS);
   }
+
+
  
 
   //// CREATING BUTTONS

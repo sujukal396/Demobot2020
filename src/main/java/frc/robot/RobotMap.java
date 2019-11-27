@@ -32,6 +32,13 @@ public class RobotMap {
   public static int JOYSTICK_LEFT_X_AXIS = 0;
   public static int JOYSTICK_LEFT_Y_AXIS = 1;
 
+  public static int Red_Button_ID = 1;
+  public static int Green_Button_ID = 0;
+  public static int Yellow_Button_ID = 3;
+  public static int Blue_Button_ID = 2;
+
+
+
 
 
   // For example to map the left and right motors, you could define the
